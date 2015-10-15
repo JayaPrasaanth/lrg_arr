@@ -1,1 +1,21 @@
-# lrg_arr
+#include<stdio.h>
+ 
+int main() {
+   int a[30], i, num, largest;
+   scanf("%d", &num);
+   for(i = 0; i < num; i++)
+      scanf("%d", &a[i]);
+   largest = a[0];
+ 
+   for(i = 0; i < num; i++) 
+     {
+         if (a[i] > largest)
+           {
+               largest = a[i];
+            }
+      }
+ 
+   printf(" %d", largest);
+ 
+   return (0);
+}
